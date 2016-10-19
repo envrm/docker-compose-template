@@ -7,6 +7,11 @@
 
 ##Использование
 
-   docker-compose up -d --build
-   ls /tmp/code/
+    docker-compose up -d --build
+    ls /tmp/code/
+
+Изменение параметров осуществляется в файле docker-compose.yml:
+
+    - url=https://github.com/envrm/docker-compose-template
+    - branch=test1
 
