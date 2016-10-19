@@ -2,11 +2,12 @@ version: '2'
 
 services:
   github:
-    build: .
+    build:
+      context: .
+      args:
+        url: https://github.com/envrm/docker-compose-template
+        branch: test1
     command: cp -r -v /code /tmp/host/
     volumes:
       - /tmp/:/tmp/host
-    environment:
-      - url=https://github.com/envrm/docker-compose-template
-      - branch=test1
 
