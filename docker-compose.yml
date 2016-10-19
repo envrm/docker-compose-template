@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  github:
+    build: .
+    command: cp -r -v /code /tmp/host/
+    volumes:
+      - /tmp/:/tmp/host
+    environment:
+      - url=https://github.com/envrm/docker-compose-template
+
