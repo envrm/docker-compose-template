@@ -12,6 +12,7 @@
 
 Изменение параметров осуществляется в файле docker-compose.yml:
 
-    - url=https://github.com/envrm/docker-compose-template
-    - branch=test1
+    args:
+      - url: https://github.com/envrm/docker-compose-template
+      - branch: test1
 
