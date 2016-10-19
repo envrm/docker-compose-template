@@ -8,4 +8,5 @@ services:
       - /tmp/:/tmp/host
     environment:
       - url=https://github.com/envrm/docker-compose-template
+      - branch=test1
 
