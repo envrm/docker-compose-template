@@ -8,6 +8,7 @@
 ##Использование
 
     docker-compose up -d --build
+    docker-compose up -d
     ls /tmp/code/
 
 Изменение параметров осуществляется в файле docker-compose.yml:
